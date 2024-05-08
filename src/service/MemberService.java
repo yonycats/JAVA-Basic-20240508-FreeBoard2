@@ -5,6 +5,7 @@ import java.util.Map;
 
 import controller.MainController;
 import dao.MemberDao;
+import vo.MemberVo;
 
 public class MemberService {
 	private static MemberService instance;
@@ -25,8 +26,7 @@ public class MemberService {
 	
 	public boolean login(List<Object> param, int role) {
 		
-		// memberDao.login 메서드로 로그인 시도
-		Map<String, Object> member = memberDao.login(param);
+		MemberVo member = memberDao.login(param);
 		
 		if(member == null) {
 			return false;

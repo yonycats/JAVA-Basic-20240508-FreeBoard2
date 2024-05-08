@@ -4,18 +4,14 @@ public enum View {
 	
 	HOME,							// 홈	
 	ADMIN,						    // 관리자
-	LOGIN,
-	MEMBER,
 	
-	BOOK_HOME,
-	BOOK_LIST,
-	BOOK_INSERT,
-	BOOK_UPDATE,
-	BOOK_DELETE,
+	MEMBER_LOGIN,						    
+	ADMIN_LOGIN,						   
 	
-	HOLD_HOME,
-	HOLD_LIST,
-	HOLD_INSERT,
-	HOLD_DELETE
+	FREE_LIST,
+	FREE_INSERT,
+	FREE_DETAIL,
+	FREE_UPDATE,
+	FREE_DELETE
 	
 }
